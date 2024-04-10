@@ -1,0 +1,114 @@
+@import url('fonts.css');
+
+.container{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animação do background */
+.gradient {
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container-blocos {
+    position: relative;
+    top: calc(20% + 200px); 
+    left: 52%;
+    transform: translateX(-50%);
+    width: 70%; 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#bloco1, #bloco2, #bloco3, #bloco4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #ffffff4b;
+}
+
+.container-blocos h1{
+    font-family: 'brocats';
+    color: #bc0101;
+    
+}
+
+.container-blocos h3{
+    font-family: 'brocats';
+    color: #010001;
+}
+
+.container h1, p{
+    text-align: center;
+}
+
+.container h1{
+    color: #FFFFFF;
+}
+
+.container p{
+    font-family: 'Source Code Pro';
+    color: white;
+}
+
+.div-botoes button{
+    background: none;
+    border: none;
+    display: inline-block;
+    color: #2500c9;
+    padding: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.div-botoes button:hover {
+    color: white;
+    transition: .2s;
+}
+
+#botao-confirmar {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #056700;
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: .2s;
+}
+
+#botao-confirmar:hover{
+    background-color: #07970c;
+    border-radius: 50%;
+    transition: .2s;
+}
